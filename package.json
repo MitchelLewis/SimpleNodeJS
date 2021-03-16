@@ -1,0 +1,14 @@
+{
+  "name": "simple_node.js",
+  "version": "0.1.0",
+  "description": "A simple Node.js application",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^8.3.2"
+  }
+}
