@@ -2,7 +2,7 @@ const chai    = require('chai');
 const expect  = chai.expect;
 const request = require('superagent');
 const status  = require('http-status');
-const router  = require('../routes/hello.js');
+const router  = require('../routes/routes.js');
 const rootServer = 'http://localhost:3000/'
 describe('HelloWorld API', function() {
   before(function(done) {
