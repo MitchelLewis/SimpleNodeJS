@@ -214,7 +214,6 @@ describe('messages library', function() {
 
 
   /* 1.4 Data validation */
-  /*
   it('messages.create() fails to create messages given data which is missing ' +
      'username and/or text properties.',function(done){
     var emptyMessage = {};
@@ -239,7 +238,7 @@ describe('messages library', function() {
   it('messages.create() fails to create messages given username and/or text ' +
      'properties which are not convertible to string.',function(done){
     var usernameMessage = {username:{prop:'val'},text:'Carol\'s Message'};
-    var textMessage = {username:'Carol',text:{prop:'val'}};
+      var textMessage = {username:'Carol',text:{prop:'val'}};
     var testCreateFail = function(message){
         return function(done){
           messages.create(message,function(err,res){
@@ -278,10 +277,8 @@ describe('messages library', function() {
       });
     });
   });
-  */
 
   /* 1.5 Security */
-  /*
   it('messages passed to messages.create() are sanitized to remove dangerous ' +
      'HTML before being stored',function(done){
     const dangerousHTML = '<script>maliciousCode()</script>';
@@ -345,5 +342,4 @@ describe('messages library', function() {
         });
       });
   });
-  */
 });
